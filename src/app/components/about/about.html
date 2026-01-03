@@ -1,0 +1,49 @@
+<section id="about" class="section bg-white dark:bg-gray-900">
+    <div class="container mx-auto">
+        <h2 class="section-title gradient-text">{{ 'sections.aboutMe' | translate }}</h2>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="animate-on-scroll" animateOnScroll>
+                <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8 text-center">
+                    {{ 'profile.bio' | translate }}
+                </p>
+            </div>
+
+            <!-- Education -->
+            <div class="mt-16">
+                <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
+                    <i class="fas fa-graduation-cap text-primary-500 mr-3"></i>
+                    {{ 'sections.education' | translate }}
+                </h3>
+
+                <div class="space-y-6">
+                    @for (edu of education; track edu.id) {
+                    <div class="glass p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate-on-scroll"
+                        animateOnScroll>
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 dark:text-white">{{ edu.degree }}</h4>
+                                <p class="text-lg text-primary-500 dark:text-primary-400 font-semibold">{{
+                                    edu.institution }}</p>
+                            </div>
+                            <div class="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">
+                                <i class="fas fa-calendar mr-2"></i>
+                                <span>{{ edu.startDate }} - {{ edu.endDate }}</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 mb-2">
+                            <i class="fas fa-book mr-2"></i>{{ edu.field }}
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>{{ edu.location }}
+                        </p>
+                        @if (edu.description) {
+                        <p class="text-gray-700 dark:text-gray-300">{{ edu.description }}</p>
+                        }
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

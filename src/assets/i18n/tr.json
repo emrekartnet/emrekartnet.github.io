@@ -1,0 +1,193 @@
+{
+    "nav": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımda",
+        "skills": "Yetenekler",
+        "experience": "Deneyim",
+        "projects": "Projeler",
+        "contact": "İletişim"
+    },
+    "hero": {
+        "greeting": "Merhaba, Ben",
+        "name": "Emre Kart",
+        "title": "Bilgisayar Mühendisi",
+        "tagline": "Ölçeklenebilir SaaS Mimarileri ve Yapay Zeka Odaklı Çözümler Geliştiriyorum",
+        "subTagline": ".NET Core, Angular ve Bulut Tabanlı Teknolojilerde Uzmanlaşmış Bilgisayar Mühendisi",
+        "downloadCV": "CV İndir",
+        "viewGitHub": "GitHub'ı Görüntüle",
+        "roles": {
+            "engineer": "Bilgisayar Mühendisi",
+            "fullstack": "Full-Stack Geliştirici",
+            "cloud": "Bulut Mimarı",
+            "ai": "Yapay Zeka Meraklısı"
+        }
+    },
+    "sections": {
+        "aboutMe": "Hakkımda",
+        "education": "Eğitim",
+        "technicalSkills": "Teknik Yetenekler",
+        "workExperience": "İş Deneyimi",
+        "featuredProjects": "Öne Çıkan Projeler",
+        "otherProjects": "Diğer Projeler",
+        "getInTouch": "İletişim"
+    },
+    "profile": {
+        "bio": "Full-Stack geliştirme, cloud mimarisi ve yapay zeka entegrasyonu konularında deneyimli, tutkulu bir Bilgisayar Mühendisiyim. .NET Core, Angular ve modern DevOps pratikleriyle kurumsal seviyede SaaS platformları geliştirme deneyimim var. Gerçek dünya problemlerine ölçeklenebilir ve sürdürülebilir çözümler üretmeye odaklanıyorum."
+    },
+    "education": {
+        "eskisehir": {
+            "degree": "Lisans Derecesi",
+            "field": "Bilgisayar Mühendisliği",
+            "description": "Yazılım geliştirme, algoritmalar, sistem tasarımı ve yapay zeka kapsayan kapsamlı bilgisayar mühendisliği müfredatı."
+        },
+        "42schools": {
+            "degree": "Akran Öğretimi Programı",
+            "field": "Bilgisayar Bilimleri",
+            "description": "C/C++ programlama, Unix sistemleri, algoritmalar ve yazılım mühendisliği ilkelerine odaklanan yoğun proje tabanlı öğrenme programı."
+        }
+    },
+    "experience": {
+        "bosphorusiss": {
+            "title": "Yazılım Geliştirme Stajyeri",
+            "description": "Son teknoloji dağıtık  teknolojilerini kullanarak gerçek zamanlı görev yönetim sistemi mimarisi oluşturdum ve geliştirdim.",
+            "achievements": [
+                "SignalR kullanarak anında görev güncellemeleri için gerçek zamanlı işbirliği özellikleri uyguladım",
+                "Asenkron işleme için RabbitMQ ile mesaj kuyruk sistemi tasarladım",
+                "Redis önbellekleme kullanarak performans optimize ettim, veritabanı sorgularını %60 azalttım",
+                "Sürdürülebilir, test edilebilir kod tabanı için Clean Architecture prensiplerini uyguladım"
+            ]
+        },
+        "sovos": {
+            "title": "Ar-Ge Ürün Geliştirme Stajyeri",
+            "description": "Mevcut platformlara kolayca entegre edilebilen, vergi mevzuatı konusunda uzmanlaşmış modüler bir yapay zeka asistanı chatbot geliştirdim.",
+            "achievements": [
+                "Karmaşık vergi mevzuatı sorularına yüksek doğruluklu yanıtlar için RAG (Retrieval-Augmented Generation) mimarisi tasarladım ve uyguladım",
+                "Gelir İdaresi Başkanlığı (GİB) verilerini web scraping ile toplayarak sektöre özel veri seti oluşturdum",
+                "ASP.NET Core ile N-Tier Architecture prensiplerine uygun backend geliştirdim",
+                "Angular ile kullanıcı dostu frontend arayüzü oluşturdum",
+                "Sovos ürün ailesine entegrasyona hazır, çalışan prototip teslim ettim"
+            ]
+        },
+        "tcmbilisim": {
+            "title": "Yazılım Geliştirici Stajyeri",
+            "description": "Microsoft teknolojileri ve düşük kodlu platformlar kullanarak özel kurumsal uygulamalar geliştirdim.",
+            "achievements": [
+                ".NET MVC çerçevesini kullanarak özel işletme uygulamaları oluşturdum",
+                "Kurumsal entegrasyonlar için RESTful API'ler tasarlayıp uyguladım",
+                "Power Automate ve Power Apps kullanarak iş süreçlerini otomatikleştirdim",
+                "Mevcut uygulamalara yeni özellikler ve performans iyileştirmeleri ekledim"
+            ]
+        },
+        "tubitak": {
+            "title": "Araştırmacı - STAR Programı",
+            "description": "Yeni nesil 6G kablosuz ağları için yapay zeka tabanlı numeroloji tahsis algoritmaları üzerine araştırma yaptım.",
+            "achievements": [
+                "6G ağlarında akıllı kaynak tahsisi için makine öğrenimi modelleri geliştirdim",
+                "ANN, KNN ve Random Forest algoritmalarını uyguladım ve karşılaştırdım",
+                "Araştırma bulgularını yayınladım ve akademik yayınlara katkıda bulundum",
+                "Tahminlerde %92 doğruluk elde ederek algoritma performansını optimize ettim"
+            ]
+        },
+        "mavera_leader": {
+            "title": "Araç Kontrol ve Telemetri Sistemi Ekip Lideri",
+            "description": "Elektrikli araç ekibinde araç kontrol sistemi ve telemetri sistemi birimini yönettim.",
+            "achievements": [
+                "Araç kontrol sistemi ve telemetri geliştirme ekibini yönettim",
+                "Teknofest 2024 Efficiency Challenge'a katıldım",
+                "Kontrol algoritmaları ve telemetri veri toplama entegrasyonunu koordine ettim",
+                "Ekip iş akışı ve teknik karar alma süreçlerini yönettim"
+            ]
+        },
+        "mavera_member": {
+            "title": "Araç Kontrol ve Telemetri Sistemi Ekip Üyesi",
+            "description": "Elektrikli araç ekibinde araç kontrol sistemi ve telemetri sistemleri üzerinde çalıştım.",
+            "achievements": [
+                "Araç kontrol sistemi bileşenleri geliştirdim",
+                "Telemetri veri toplam ve izleme sistemlerini uyguladım",
+                "Motor kontrolü ve batarya yönetim sistemlerinin entegrasyonunda işbirliği yaptım"
+            ]
+        }
+    },
+    "projects": {
+        "randevubulurum": {
+            "title": "Randevu Bulurum",
+            "description": "Binlerce kullanıcıya hizmet veren kurumsal düzeyde SaaS randevu yönetim platformu",
+            "longDescription": "Her büyüklükteki işletme için tasarlanmış kapsamlı bir randevu yönetim sistemi. Gerçek zamanlı rezervasyon, otomatik bildirimler, takvim entegrasyonu ve detaylı analitik özellikleri içerir. Ölçeklenebilirlik ve güvenilirlik temel prensipler olarak alınarak, konteynerize mikroservis mimarisiyle üretim altyapısına dağıtılmıştır.",
+            "achievements": [
+                "SaaS platformunu konseptten üretime tam yığın mimariledim",
+                "Temiz endişe ayrımı için CQRS ve Onion Architecture uyguladım",
+                "Kolay dağıtım için Docker kullanarak tüm uygulamayı konteynerledim",
+                "Nginx ters proxy ve SSL sertifikalarıyla üretim sunucusunu yapılandırdım",
+                "Sıfır kesinti süresiyle canlı üretim ortamını yönetiyorum"
+            ]
+        },
+        "memeclassification": {
+            "title": "Çok Modlu Meme Sınıflandırma Sistemi",
+            "description": "Vision transformers ve CLIP modelleri kullanarak yapay zeka destekli içerik analiz platformu",
+            "longDescription": "CLIP ve Vision Transformer mimarileriyle çok modlu yapay zeka modelleri kullanarak meme içeriğini analiz eden ve sınıflandıran gelişmiş makine öğrenimi sistemi. Duygu analizi, kategori sınıflandırması ve gerçek zamanlı çıkarım özelliklerini içerir.",
+            "achievements": [
+                "Çoklu modal anlama için son teknoloji CLIP ve ViT modellerini entegre ettim",
+                "ML çıkarımı için FastAPI ile Python mikro hizmeti oluşturdum",
+                "Orkestrasyon ve veri yönetimi için .NET Core backend",
+                "Chart.js kullanarak interaktif görselleştirmelerle Angular ön yüz",
+                "Test veri setinde %89 sınıflandırma doğruluğu elde ettim"
+            ]
+        },
+        "tbot": {
+            "title": "T-BOT: Bankacılık Yapay Zeka Asistanı",
+            "description": "Bankacılık müşteri desteği için bağlam farkında konuşmacı yapay zeka",
+            "longDescription": "Bankacılık müşteri hizmetleri için Büyük Dil Modellerinden yararlanan akıllı sohbet robotu. Doğal dil anlama, işlem sorguları, hesap yönetimi yardımı ve güvenli kullanıcı kimlik doğrulama özelliklerini içerir. Verimli bağlam alımı için vektör veritabanları kullanır.",
+            "achievements": [
+                "Doğru yanıtlar için RAG (Retrieval-Augmented Generation) uyguladım",
+                "Bağlam yönetimi ile konuşma akışı tasarladım",
+                "Güvenli kimlik doğrulama ve oturum yönetimi entegre ettim",
+                "WebSocket iletişimi ile gerçek zamanlı sohbet arayüzü oluşturdum"
+            ]
+        },
+        "ecowater": {
+            "title": "EcoWater Platformu",
+            "description": "Hackathon'da kazanan sürdürülebilir su tüketim takip platformu",
+            "longDescription": "Oyunlaştırma ve analitik yoluyla sürdürülebilir su kullanımını teşvik eden web uygulaması. Kullanıcılar tüketimlerini takip edebilir, hedefler belirleyebilir, rozetler kazanabilir ve topluluk ortalamaları ile karşılaştırabilirler. Üniversite hackathonında birinci oldu.",
+            "achievements": [
+                "🏆 Birinci Yer - Üniversite Hackathon 2024",
+                "48 saatte tam yığın uygulama geliştirdim",
+                "Su tasarrufunu teşvik etmek için oyunlaştırma sistemi uyguladım",
+                "Tüketim analitikleri için veri görselleştirme panosu oluşturdum"
+            ]
+        }
+    },
+    "buttons": {
+        "liveDemo": "Canlı Demo",
+        "sourceCode": "Kaynak Kod",
+        "demo": "Demo",
+        "code": "Kod",
+        "sendEmail": "E-posta Gönder",
+        "connectWithMe": "Benimle Bağlantı Kur",
+        "followMe": "Takip Et",
+        "viewProfile": "Profili Görüntüle"
+    },
+    "labels": {
+        "keyAchievements": "Önemli Başarılar",
+        "highlights": "Öne Çıkanlar",
+        "email": "E-posta",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "location": "Konum",
+        "type": "Tip",
+        "current": "Halen",
+        "technologies": "Teknolojiler"
+    },
+    "footer": {
+        "builtWith": "ile yapıldı",
+        "rights": "Tüm hakları saklıdır",
+        "quickLinks": "Hızlı Bağlantılar",
+        "connect": "İletişim"
+    },
+    "contact": {
+        "description": "Yeni projeler, yaratıcı fikirler veya işbirliği fırsatları için her zaman açığım. Benimle iletişime geçmekten çekinmeyin!"
+    },
+    "common": {
+        "present": "Halen",
+        "and": "ve"
+    }
+}

@@ -1,0 +1,87 @@
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" [class.glass]="isScrolled"
+  [class.bg-white/95]="isScrolled && !themeService.isDarkMode()"
+  [class.dark:bg-gray-900/95]="isScrolled && themeService.isDarkMode()" [class.shadow-lg]="isScrolled">
+  <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a (click)="scrollToSection('home')" class="cursor-pointer">
+          <h1 class="text-2xl md:text-3xl font-bold gradient-text">
+            EK
+          </h1>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-8">
+        @for (link of navLinks; track link.target) {
+        <a (click)="scrollToSection(link.target)" class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 
+                   cursor-pointer font-medium transition-colors duration-200">
+          {{ link.label | translate }}
+        </a>
+        }
+
+        <!-- Language Toggle -->
+        <button (click)="toggleLanguage()"
+          class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 text-xl"
+          [attr.aria-label]="'Switch language'">
+          {{ getCurrentLanguageText() }}
+        </button>
+
+        <!-- Theme Toggle -->
+        <button (click)="toggleTheme()"
+          class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+          aria-label="Toggle dark mode">
+          @if (themeService.isDarkMode()) {
+          <i class="fas fa-sun text-xl text-yellow-400"></i>
+          } @else {
+          <i class="fas fa-moon text-xl text-gray-700"></i>
+          }
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center space-x-4">
+        <button (click)="toggleLanguage()"
+          class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-xl"
+          [attr.aria-label]="'Switch language'">
+          {{ getCurrentLanguageText() }}
+        </button>
+
+        <button (click)="toggleTheme()"
+          class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          aria-label="Toggle dark mode">
+          @if (themeService.isDarkMode()) {
+          <i class="fas fa-sun text-xl text-yellow-400"></i>
+          } @else {
+          <i class="fas fa-moon text-xl text-gray-700"></i>
+          }
+        </button>
+
+        <button (click)="toggleMobileMenu()"
+          class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle menu">
+          @if (isMobileMenuOpen) {
+          <i class="fas fa-times text-2xl"></i>
+          } @else {
+          <i class="fas fa-bars text-2xl"></i>
+          }
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    @if (isMobileMenuOpen) {
+    <div class="md:hidden py-4 animate-fade-in">
+      @for (link of navLinks; track link.target) {
+      <a (click)="scrollToSection(link.target)" class="block py-3 px-4 text-gray-700 dark:text-gray-300 hover:bg-gray-100 
+                   dark:hover:bg-gray-800 rounded-lg cursor-pointer font-medium transition-colors">
+        {{ link.label | translate }}
+      </a>
+      }
+    </div>
+    }
+  </nav>
+</header>
+
+<!-- Spacer to prevent content from being hidden under fixed header -->
+<div class="h-16 md:h-20"></div>

@@ -1,0 +1,180 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hello, I'm",
+        "name": "Emre Kart",
+        "title": "Computer Engineer",
+        "tagline": "Building Scalable SaaS Architectures & AI-Driven Solutions",
+        "subTagline": "Computer Engineer specializing in .NET Core, Angular, and Cloud Native Technologies",
+        "downloadCV": "Download CV",
+        "viewGitHub": "View GitHub",
+        "roles": {
+            "engineer": "Computer Engineer",
+            "fullstack": "Full-Stack Developer",
+            "cloud": "Cloud Architect",
+            "ai": "AI Enthusiast"
+        }
+    },
+    "sections": {
+        "aboutMe": "About Me",
+        "education": "Education",
+        "technicalSkills": "Technical Skills",
+        "workExperience": "Work Experience",
+        "featuredProjects": "Featured Projects",
+        "otherProjects": "Other Projects",
+        "getInTouch": "Get In Touch"
+    },
+    "profile": {
+        "bio": "Passionate Computer Engineer with expertise in full-stack development, cloud architecture, and AI integration. Experienced in building enterprise-grade SaaS platforms using .NET Core, Angular, and modern DevOps practices. Dedicated to creating scalable, maintainable solutions that solve real-world problems."
+    },
+    "education": {
+        "eskisehir": {
+            "degree": "Bachelor of Science",
+            "field": "Computer Engineering",
+            "description": "Comprehensive computer engineering curriculum covering software development, algorithms, system design, and artificial intelligence."
+        },
+        "42schools": {
+            "degree": "Peer-to-Peer Learning Program",
+            "field": "Computer Science",
+            "description": "Intensive project-based learning program focusing on C/C++ programming, Unix systems, algorithms, and software engineering principles."
+        }
+    },
+    "experience": {
+        "bosphorusiss": {
+            "title": "Software Development Intern",
+            "description": "Architected and developed a real-time task management system utilizing cutting-edge distributed technologies.",
+            "achievements": [
+                "Implemented real-time collaboration features using SignalR for instant task updates",
+                "Designed message queue system with RabbitMQ for asynchronous processing",
+                "Optimized performance using Redis caching, reducing database queries by 60%",
+                "Applied Clean Architecture principles for maintainable, testable codebase"
+            ]
+        },
+        "sovos": {
+            "title": "R&D Product Development Intern",
+            "description": "Contributed to enterprise tax compliance software development and research initiatives.",
+            "achievements": [
+                "Participated in R&D projects for next-generation tax compliance solutions",
+                "Collaborated with cross-functional teams on product development"
+            ]
+        },
+        "tcmbilisim": {
+            "title": "Software Developer Intern",
+            "description": "Developed custom enterprise applications using Microsoft technologies and low-code platforms.",
+            "achievements": [
+                "Built custom business applications using .NET MVC framework",
+                "Designed and implemented RESTful APIs for enterprise integrations",
+                "Automated business processes using Power Automate and Power Apps",
+                "Enhanced existing applications with new features and performance improvements"
+            ]
+        },
+        "tubitak": {
+            "title": "Researcher - STAR Program",
+            "description": "Conducted research on AI-based numerology allocation algorithms for next-generation 6G wireless networks.",
+            "achievements": [
+                "Developed machine learning models for intelligent resource allocation in 6G networks",
+                "Implemented and compared ANN, KNN, and Random Forest algorithms",
+                "Published research findings and contributed to academic publications",
+                "Optimized algorithm performance achieving 92% accuracy in predictions"
+            ]
+        },
+        "mavera": {
+            "title": "Team Leader - Vehicle Control System",
+            "description": "Led the development team for electric vehicle control systems in university tech team.",
+            "achievements": [
+                "Managed a team of 8 engineering students",
+                "Designed and implemented vehicle control algorithms",
+                "Successfully integrated multiple subsystems (motor control, battery management, telemetry)",
+                "Participated in national electric vehicle competitions"
+            ]
+        }
+    },
+    "projects": {
+        "randevubulurum": {
+            "title": "Randevu Bulurum",
+            "description": "Enterprise-grade SaaS appointment management platform serving thousands of users",
+            "longDescription": "A comprehensive appointment management system designed for businesses of all sizes. Features include real-time booking, automated notifications, calendar integration, and detailed analytics. Built with scalability and reliability as core principles, deployed on production infrastructure with containerized microservices architecture.",
+            "achievements": [
+                "Architected full-stack SaaS platform from concept to production",
+                "Implemented CQRS and Onion Architecture for clean separation of concerns",
+                "Containerized entire application using Docker for easy deployment",
+                "Configured production server with Nginx reverse proxy and SSL certificates",
+                "Managing live production environment with zero downtime deployments"
+            ]
+        },
+        "memeclassification": {
+            "title": "Multimodal Meme Classification System",
+            "description": "AI-powered content analysis platform using vision transformers and CLIP models",
+            "longDescription": "Advanced machine learning system for analyzing and classifying meme content using multimodal AI models. Combines image and text understanding through CLIP and Vision Transformer architectures. Features include sentiment analysis, category classification, and real-time inference.",
+            "achievements": [
+                "Integrated state-of-the-art CLIP and ViT models for multimodal understanding",
+                "Built Python microservice with FastAPI for ML inference",
+                ".NET Core backend for orchestration and data management",
+                "Angular frontend with interactive visualizations using Chart.js",
+                "Achieved 89% classification accuracy on test dataset"
+            ]
+        },
+        "tbot": {
+            "title": "T-BOT: Banking AI Assistant",
+            "description": "Context-aware conversational AI for banking customer support",
+            "longDescription": "Intelligent chatbot leveraging Large Language Models for banking customer service. Features include natural language understanding, transaction queries, account management assistance, and secure user authentication. Utilizes vector databases for efficient context retrieval.",
+            "achievements": [
+                "Implemented RAG (Retrieval-Augmented Generation) for accurate responses",
+                "Designed conversation flow with context management",
+                "Integrated secure authentication and session handling",
+                "Built real-time chat interface with WebSocket communication"
+            ]
+        },
+        "ecowater": {
+            "title": "EcoWater Platform",
+            "description": "Hackathon-winning sustainable water consumption tracking platform",
+            "longDescription": "Web application promoting sustainable water usage through gamification and analytics. Users can track their consumption, set goals, earn badges, and compare with community averages. Won first place at university hackathon.",
+            "achievements": [
+                "🏆 First Place Winner - University Hackathon 2024",
+                "Developed full-stack application in 48 hours",
+                "Implemented gamification system to encourage water conservation",
+                "Created data visualization dashboard for consumption analytics"
+            ]
+        }
+    },
+    "buttons": {
+        "liveDemo": "Live Demo",
+        "sourceCode": "Source Code",
+        "demo": "Demo",
+        "code": "Code",
+        "sendEmail": "Send me an email",
+        "connectWithMe": "Connect with me",
+        "followMe": "Follow me"
+    },
+    "labels": {
+        "keyAchievements": "Key Achievements",
+        "highlights": "Highlights",
+        "email": "Email",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "location": "Location",
+        "type": "Type",
+        "current": "Current",
+        "technologies": "Technologies"
+    },
+    "footer": {
+        "builtWith": "Built with",
+        "rights": "All rights reserved",
+        "quickLinks": "Quick Links",
+        "connect": "Connect"
+    },
+    "contact": {
+        "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision."
+    },
+    "common": {
+        "present": "Present",
+        "and": "and"
+    }
+}

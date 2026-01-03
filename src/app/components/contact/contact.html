@@ -1,0 +1,86 @@
+<section id="contact" class="section bg-white dark:bg-gray-900">
+    <div class="container mx-auto">
+        <h2 class="section-title gradient-text">{{ 'sections.getInTouch' | translate }}</h2>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400">
+                    {{ 'contact.description' | translate }}
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Email -->
+                <div class="glass p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate-on-scroll"
+                    animateOnScroll>
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center">
+                        <i class="fas fa-envelope text-2xl text-primary-500"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 dark:text-white mb-2">{{ 'labels.email' | translate }}</h3>
+                    <a [href]="'mailto:' + contact.email"
+                        class="text-primary-500 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-300">
+                        {{ contact.email }}
+                    </a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="glass p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate-on-scroll"
+                    animateOnScroll>
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center">
+                        <i class="fab fa-linkedin text-2xl text-primary-500"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 dark:text-white mb-2">{{ 'labels.linkedin' | translate }}</h3>
+                    <a [href]="contact.social.linkedin" target="_blank" rel="noopener noreferrer"
+                        class="text-primary-500 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-300">
+                        {{ 'buttons.connectWithMe' | translate }}
+                    </a>
+                </div>
+
+                <!-- GitHub -->
+                <div class="glass p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate-on-scroll"
+                    animateOnScroll>
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center">
+                        <i class="fab fa-github text-2xl text-primary-500"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 dark:text-white mb-2">{{ 'labels.github' | translate }}</h3>
+                    <a [href]="contact.social.github" target="_blank" rel="noopener noreferrer"
+                        class="text-primary-500 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-300">
+                        {{ 'buttons.followMe' | translate }}
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center gap-6 mb-8">
+                <a [href]="contact.social.github" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center 
+                 text-gray-700 dark:text-gray-300 hover:bg-primary-500 hover:text-white 
+                 dark:hover:bg-primary-500 dark:hover:text-white transition-all duration-300 transform hover:scale-110"
+                    aria-label="GitHub">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a [href]="contact.social.linkedin" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center 
+                 text-gray-700 dark:text-gray-300 hover:bg-primary-500 hover:text-white 
+                 dark:hover:bg-primary-500 dark:hover:text-white transition-all duration-300 transform hover:scale-110"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a [href]="'mailto:' + contact.email" class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center 
+                 text-gray-700 dark:text-gray-300 hover:bg-primary-500 hover:text-white 
+                 dark:hover:bg-primary-500 dark:hover:text-white transition-all duration-300 transform hover:scale-110"
+                    aria-label="Email">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center">
+                <a [href]="'mailto:' + contact.email" class="btn-primary inline-flex items-center gap-2">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>{{ 'buttons.sendEmail' | translate }}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,79 @@
+<section id="home"
+    class="section min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="animate-on-scroll text-center lg:text-left order-2 lg:order-1" animateOnScroll>
+                <p class="text-primary-500 dark:text-primary-400 font-semibold text-lg mb-4">
+                    {{ 'hero.greeting' | translate }}
+                </p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
+                    {{ profile.name }}
+                </h1>
+                <div class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 h-12 md:h-14">
+                    <span class="gradient-text" [appTypewriter]="typewriterTexts"></span>
+                </div>
+                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
+                    {{ 'hero.tagline' | translate }}
+                </p>
+                <p class="text-base md:text-lg text-gray-500 dark:text-gray-400 mb-8 max-w-2xl">
+                    {{ 'hero.subTagline' | translate }}
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="assets/cv/emre-kart-cv.pdf" download
+                        class="btn-primary inline-flex items-center justify-center gap-2">
+                        <i class="fas fa-download"></i>
+                        <span>{{ 'hero.downloadCV' | translate }}</span>
+                    </a>
+                    <a [href]="profile.links.github" target="_blank" rel="noopener noreferrer"
+                        class="btn-secondary inline-flex items-center justify-center gap-2">
+                        <i class="fab fa-github"></i>
+                        <span>{{ 'hero.viewGitHub' | translate }}</span>
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex gap-6 mt-8 justify-center lg:justify-start">
+                    <a [href]="profile.links.github" target="_blank" rel="noopener noreferrer"
+                        class="text-2xl text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a [href]="profile.links.linkedin" target="_blank" rel="noopener noreferrer"
+                        class="text-2xl text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a [href]="'mailto:' + profile.email"
+                        class="text-2xl text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                        aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image/Visual -->
+            <div class="animate-on-scroll order-1 lg:order-2" animateOnScroll>
+                <div class="relative">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-700 rounded-full blur-3xl opacity-20 animate-pulse">
+                    </div>
+                    <div class="relative bg-gradient-to-br from-primary-400 to-primary-600 p-1 rounded-full">
+                        <div class="bg-white dark:bg-gray-800 rounded-full p-8">
+                            <div class="w-64 h-64 md:w-80 md:h-80 mx-auto flex items-center justify-center">
+                                <i class="fas fa-code text-8xl md:text-9xl text-primary-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden lg:block">
+            <i class="fas fa-chevron-down text-2xl text-primary-500"></i>
+        </div>
+    </div>
+</section>
