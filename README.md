@@ -1,96 +1,149 @@
-# Emre Kart - Portfolio Website
+# 🚀 Emre Kart - Portfolio Website
 
-Modern, high-performance personal portfolio website built with Angular 18+ and Tailwind CSS.
+Modern, bilingual portfolio website built with Angular 18 and optimized for SEO and social media sharing.
 
-## 🚀 Features
+🌐 **Live Site:** [emrekart.me](https://emrekart.me)
 
-- **Modern Stack**: Angular 18+ with standalone components, TypeScript strict mode, Tailwind CSS
-- **Responsive Design**: Mobile-first approach, optimized for all devices
-- **Dark/Light Mode**: System preference detection with localStorage persistence
-- **Performance Optimized**: Lighthouse 100/100 score target
-- **SEO Friendly**: Comprehensive meta tags, Open Graph, Twitter Cards
-- **GitHub Pages Ready**: HashLocationStrategy for seamless deployment
+## ✨ Features
+
+- 🌍 **Bilingual Support** - Turkish/English instant switching
+- 🎨 **Modern Design** - Responsive, dark/light themes
+- 🔍 **SEO Optimized** - Meta tags, schema.org, robots.txt, sitemap.xml
+- 📱 **Social Media Ready** - Open Graph, Twitter Cards with custom preview image
+- ⚡ **Performance** - 123 KB compressed, optimized bundle
+- 🎯 **Focused Skills** - 18 curated technologies (Backend, Frontend, DevOps, Databases, Architecture)
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Angular 18+ (Standalone Components)
-- **Styling**: Tailwind CSS v3.x
-- **Icons**: FontAwesome
-- **Fonts**: Google Fonts (Inter, Fira Code)
-- **Deployment**: GitHub Pages
+- **Framework:** Angular 18 (Standalone Components)
+- **Styling:** Tailwind CSS
+- **Icons:** Font Awesome
+- **i18n:** @ngx-translate/core
+- **Routing:** Hash Location Strategy (GitHub Pages compatible)
+- **Deployment:** GitHub Pages
 
 ## 📦 Installation
 
 ```bash
+# Clone repository
+git clone https://github.com/emrekartnet/emrekartnet.github.io.git
+cd emrekartnet.github.io
+
 # Install dependencies
 npm install
 
-# Run development server
+# Start development server
 npm start
-
-# Build for production
-npm run build
 ```
 
-## 🌐 Deployment to GitHub Pages
+Development server runs at `http://localhost:4200/`
 
-### Method 1: Using docs/ folder (Recommended)
+## 🏗️ Build & Deploy
 
-1. Build the project:
+### Development Build
 ```bash
 npm run build
 ```
 
-2. Commit and push the `docs/` folder:
+### Production Build + Deploy
 ```bash
-git add docs/
-git commit -m "Deploy to GitHub Pages"
+# Automated build and file relocation for GitHub Pages
+npm run build:deploy
+
+# Commit and push
+git add .
+git commit -m "Update portfolio"
 git push origin main
 ```
 
-3. On GitHub, go to Settings > Pages
-4. Select "Deploy from branch"
-5. Choose `main` branch and `/docs` folder
-6. Save and wait for deployment
+**Note:** `build:deploy` script automatically:
+1. Builds production bundle
+2. Moves files from `docs/browser/` to `docs/`
+3. Removes browser folder
 
-### Method 2: Using GitHub Actions
+Site goes live at `https://emrekart.me` within 2-3 minutes.
 
-A GitHub Actions workflow is included in `.github/workflows/deploy.yml` for automated deployment.
+## 📁 Project Structure
 
-## 📝 Content Updates
-
-All portfolio content is centralized in `src/app/shared/data.ts`. Update this file to modify:
-
-- Personal information
-- Education history
-- Work experience
-- Projects
-- Skills
-- Contact information
+```
+├── src/
+│   ├── app/
+│   │   ├── components/      # UI components
+│   │   ├── directives/      # Custom directives
+│   │   ├── models/          # TypeScript interfaces
+│   │   ├── services/        # Business logic
+│   │   └── shared/          # Data layer (data.ts)
+│   ├── assets/
+│   │   ├── i18n/           # Translation files (tr.json, en.json)
+│   │   ├── images/         # OG social preview image
+│   │   └── cv/             # Resume PDF
+│   ├── index.html          # SEO meta tags
+│   ├── robots.txt          # Search engine directives
+│   └── sitemap.xml         # Search engine sitemap
+├── docs/                   # GitHub Pages deployment folder
+└── CNAME                   # Custom domain configuration
+```
 
 ## 🎨 Customization
 
-### Colors
+### Update Content
+All portfolio data is centralized in `src/app/shared/data.ts`:
+- Profile information
+- Skills & technologies
+- Work experience
+- Education
+- Projects
 
-Update `tailwind.config.js` to modify the color scheme:
+### Translation
+Edit translation files:
+- `src/assets/i18n/tr.json` - Turkish
+- `src/assets/i18n/en.json` - English
 
-```javascript
-colors: {
-  primary: { ... },
-  secondary: { ... }
-}
-```
+### SEO & Meta Tags
+Update in `src/index.html`:
+- Page title
+- Meta description
+- Open Graph tags
+- Schema.org structured data
 
-### Fonts
+## 🔍 SEO Features
 
-Modify the font imports in `src/styles.css` and update `tailwind.config.js`.
+- ✅ Comprehensive meta tags
+- ✅ Open Graph for Facebook/LinkedIn
+- ✅ Twitter Cards
+- ✅ Schema.org Person structured data
+- ✅ Google Search Console verification
+- ✅ robots.txt & sitemap.xml
+- ✅ Custom social preview image (1200x630px)
 
-## 📄 License
+## 📊 Performance
 
-© 2026 Emre Kart. All rights reserved.
+- **Bundle Size:** 501 KB (raw) / 123 KB (compressed)
+- **Initial Load:** Fast (~2s on 3G)
+- **Lighthouse Scores:** Performance 90+, SEO 100
 
-## 🤝 Contact
+## 🚀 Deployment
 
-- **Email**: contact@emrekart.me
-- **LinkedIn**: [linkedin.com/in/emre-kart](https://linkedin.com/in/emre-kart)
-- **GitHub**: [github.com/emrekartnet](https://github.com/emrekartnet)
+Site is automatically deployed to GitHub Pages on every push to `main` branch.
+
+**Custom Domain Setup:**
+1. Update `CNAME` file with your domain
+2. Configure DNS A records to GitHub Pages IPs
+3. Enable HTTPS in GitHub Settings → Pages
+
+## � License
+
+MIT License - Feel free to use this template for your own portfolio!
+
+## 👨‍💻 Author
+
+**Emre Kart**  
+Software Engineer | Full-Stack Developer | SaaS Architect
+
+- Website: [emrekart.me](https://emrekart.me)
+- LinkedIn: [linkedin.com/in/emre-kart](https://www.linkedin.com/in/emre-kart)
+- GitHub: [github.com/kartemre](https://github.com/kartemre)
+
+---
+
+Built with ♥ using Angular
