@@ -32,7 +32,7 @@
         "getInTouch": "Get In Touch"
     },
     "profile": {
-        "bio": "Passionate Computer Engineer with expertise in full-stack development, cloud architecture, and AI integration. Experienced in building enterprise-grade SaaS platforms using .NET Core, Angular, and modern DevOps practices. Dedicated to creating scalable, maintainable solutions that solve real-world problems."
+        "bio": "Associate Software Specialist at VakıfBank's Bancassurance Technical Department, developing applications for branch, call center and mobile channels with .NET, Angular and Oracle. Focused on clean, readable and efficient code that fits existing infrastructure and standards, following SOLID principles."
     },
     "education": {
         "eskisehir": {
@@ -47,6 +47,16 @@
         }
     },
     "experience": {
+        "vakifbank": {
+            "title": "Associate Software Specialist",
+            "description": "Developing bancassurance applications for branch, call center and mobile channels in the Bancassurance Technical Department.",
+            "achievements": [
+                "Delivered many requests to production across branch, call center and mobile channels",
+                "Migrating legacy WPF branch screens to Angular",
+                "Developing backend services with .NET and WCF on Oracle databases",
+                "Writing clean, unit-tested code that follows SOLID principles and fits existing infrastructure and standards"
+            ]
+        },
         "bosphorusiss": {
             "title": "Software Development Intern",
             "description": "Architected and developed a real-time task management system utilizing cutting-edge distributed technologies.",
@@ -114,8 +124,8 @@
             "description": "AI-powered content analysis platform using vision transformers and CLIP models",
             "longDescription": "Advanced machine learning system for analyzing and classifying meme content using multimodal AI models. Combines image and text understanding through CLIP and Vision Transformer architectures. Features include sentiment analysis, category classification, and real-time inference.",
             "achievements": [
-                "Integrated state-of-the-art CLIP and ViT models for multimodal understanding",
-                "Built Python microservice with FastAPI for ML inference",
+                "Integrated the backend, frontend and AI components into a single working platform",
+                "Connected the Python/FastAPI inference service (CLIP & ViT models) to the .NET backend",
                 ".NET Core backend for orchestration and data management",
                 "Angular frontend with interactive visualizations using Chart.js",
                 "Achieved 89% classification accuracy on test dataset"
