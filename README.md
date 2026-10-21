@@ -45,21 +45,14 @@ Development server runs at `http://localhost:4200/`
 npm run build
 ```
 
-### Production Build + Deploy
-```bash
-# Automated build and file relocation for GitHub Pages
-npm run build:deploy
+### Deploy
+Site is deployed automatically by GitHub Actions (`.github/workflows/deploy.yml`) on every push to `main`:
+1. Installs dependencies with `npm ci`
+2. Builds the production bundle (`ng build`)
+3. Publishes `docs/browser/` to GitHub Pages
 
-# Commit and push
-git add .
-git commit -m "Update portfolio"
-git push origin main
-```
-
-**Note:** `build:deploy` script automatically:
-1. Builds production bundle
-2. Moves files from `docs/browser/` to `docs/`
-3. Removes browser folder
+Just push to `main`; no manual build or committing of `docs/` is needed.
+Progress can be followed in the repository's **Actions** tab. A deploy can also be started manually there (**Run workflow**).
 
 Site goes live at `https://emrekart.me` within 2-3 minutes.
 
@@ -124,7 +117,9 @@ Update in `src/index.html`:
 
 ## 🚀 Deployment
 
-Site is automatically deployed to GitHub Pages on every push to `main` branch.
+Site is automatically built and deployed to GitHub Pages by GitHub Actions on every push to `main` branch.
+
+**One-time setup:** Settings → Pages → Build and deployment → Source: **GitHub Actions**.
 
 **Custom Domain Setup:**
 1. Update `CNAME` file with your domain
