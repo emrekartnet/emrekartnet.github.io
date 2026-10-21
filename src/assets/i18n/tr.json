@@ -38,12 +38,15 @@
         "eskisehir": {
             "degree": "Lisans Derecesi",
             "field": "Bilgisayar Mühendisliği",
-            "description": "Yazılım geliştirme, algoritmalar, sistem tasarımı ve yapay zeka kapsayan kapsamlı bilgisayar mühendisliği müfredatı."
+            "description": "Yazılım geliştirme, algoritmalar, sistem tasarımı ve yapay zeka kapsayan kapsamlı bilgisayar mühendisliği müfredatı.",
+            "location": "Eskişehir, Türkiye",
+            "institution": "Eskişehir Osmangazi Üniversitesi"
         },
         "42schools": {
             "degree": "Akran Öğretimi Programı",
             "field": "Bilgisayar Bilimleri",
-            "description": "C/C++ programlama, Unix sistemleri, algoritmalar ve yazılım mühendisliği ilkelerine odaklanan yoğun proje tabanlı öğrenme programı."
+            "description": "C/C++ programlama, Unix sistemleri, algoritmalar ve yazılım mühendisliği ilkelerine odaklanan yoğun proje tabanlı öğrenme programı.",
+            "location": "İstanbul, Türkiye (42 Network)"
         }
     },
     "experience": {
@@ -55,7 +58,9 @@
                 "Eski WPF şube ekranlarını Angular'a taşıyorum",
                 ".NET ve WCF ile Oracle veritabanları üzerinde backend servisleri geliştiriyorum",
                 "SOLID prensiplerine uygun, birim testleri yazılmış, mevcut altyapı ve standartlara uyumlu temiz kod yazıyorum"
-            ]
+            ],
+            "company": "VakıfBank - Banka Sigortacılığı Teknik Müdürlüğü",
+            "location": "İstanbul, Türkiye"
         },
         "bosphorusiss": {
             "title": "Yazılım Geliştirme Stajyeri",
@@ -65,7 +70,8 @@
                 "Asenkron işleme için RabbitMQ ile mesaj kuyruk sistemi tasarladım",
                 "Redis önbellekleme kullanarak performans optimize ettim, veritabanı sorgularını %60 azalttım",
                 "Sürdürülebilir, test edilebilir kod tabanı için Clean Architecture prensiplerini uyguladım"
-            ]
+            ],
+            "location": "İstanbul, Türkiye"
         },
         "sovos": {
             "title": "Ar-Ge Ürün Geliştirme Stajyeri",
@@ -76,7 +82,8 @@
                 "ASP.NET Core ile N-Tier Architecture prensiplerine uygun backend geliştirdim",
                 "Angular ile kullanıcı dostu frontend arayüzü oluşturdum",
                 "Sovos ürün ailesine entegrasyona hazır, çalışan prototip teslim ettim"
-            ]
+            ],
+            "location": "İstanbul, Türkiye"
         },
         "tcmbilisim": {
             "title": "Yazılım Geliştirici Stajyeri",
@@ -86,7 +93,8 @@
                 "Kurumsal entegrasyonlar için RESTful API'ler tasarlayıp uyguladım",
                 "Power Automate ve Power Apps kullanarak iş süreçlerini otomatikleştirdim",
                 "Mevcut uygulamalara yeni özellikler ve performans iyileştirmeleri ekledim"
-            ]
+            ],
+            "location": "İstanbul, Türkiye"
         },
         "tubitak": {
             "title": "Araştırmacı - STAR Programı",
@@ -96,7 +104,9 @@
                 "ANN, KNN ve Random Forest algoritmalarını uyguladım ve karşılaştırdım",
                 "Araştırma bulgularını yayınladım ve akademik yayınlara katkıda bulundum",
                 "Tahminlerde %92 doğruluk elde ederek algoritma performansını optimize ettim"
-            ]
+            ],
+            "company": "TÜBİTAK (Türkiye Bilimsel ve Teknolojik Araştırma Kurumu)",
+            "location": "Türkiye"
         },
         "mavera_leader": {
             "title": "Araç Kontrol ve Telemetri Sistemi Ekip Lideri",
@@ -106,7 +116,8 @@
                 "Teknofest 2024 Efficiency Challenge'a katıldım",
                 "Kontrol algoritmaları ve telemetri veri toplama entegrasyonunu koordine ettim",
                 "Ekip iş akışı ve teknik karar alma süreçlerini yönettim"
-            ]
+            ],
+            "location": "Eskişehir, Türkiye"
         },
         "mavera_member": {
             "title": "Araç Kontrol ve Telemetri Sistemi Ekip Üyesi",
@@ -115,7 +126,8 @@
                 "Araç kontrol sistemi bileşenleri geliştirdim",
                 "Telemetri veri toplam ve izleme sistemlerini uyguladım",
                 "Motor kontrolü ve batarya yönetim sistemlerinin entegrasyonunda işbirliği yaptım"
-            ]
+            ],
+            "location": "Eskişehir, Türkiye"
         }
     },
     "projects": {
@@ -164,6 +176,14 @@
                 "Su tasarrufunu teşvik etmek için oyunlaştırma sistemi uyguladım",
                 "Tüketim analitikleri için veri görselleştirme panosu oluşturdum"
             ]
+        },
+        "taskapi": {
+            "title": "Görev Yönetimi API'si",
+            "description": "Ekip işbirliği ve proje yönetimi için RESTful API"
+        },
+        "portfolio": {
+            "title": "Portfolyo Web Sitesi",
+            "description": "Angular ve Tailwind CSS ile geliştirilmiş modern, responsive portfolyo"
         }
     },
     "buttons": {
@@ -185,7 +205,8 @@
         "location": "Konum",
         "type": "Tip",
         "current": "Halen",
-        "technologies": "Teknolojiler"
+        "technologies": "Teknolojiler",
+        "featured": "Öne Çıkan"
     },
     "footer": {
         "builtWith": "ile yapıldı",

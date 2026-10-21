@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
 import { PORTFOLIO_DATA } from '../../shared/data';
+import { tr } from '../../shared/i18n';
 
 @Component({
   selector: 'app-projects',
@@ -14,4 +15,5 @@ export class Projects {
   projects = PORTFOLIO_DATA.projects;
   featuredProjects = this.projects.filter(p => p.featured);
   otherProjects = this.projects.filter(p => !p.featured);
+  t = tr;
 }

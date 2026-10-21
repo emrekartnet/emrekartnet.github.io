@@ -5,6 +5,8 @@
         <!-- Featured Projects -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             @for (project of featuredProjects; track project.id) {
+            @let k = 'projects.' + project.i18nKey;
+            @let highlights = t(((k + '.achievements') | translate), k + '.achievements', project.achievements);
             <div
                 class="glass rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 animate-on-scroll group" animateOnScroll>
                 <!-- Project Icon -->
@@ -16,20 +18,20 @@
                 <!-- Project Content -->
                 <div class="p-6">
                     <div class="flex items-start justify-between mb-4">
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">{{ project.title }}</h3>
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">{{ t(((k + '.title') | translate), k + '.title', project.title) }}</h3>
                         <span
                             class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full text-sm font-semibold">
-                            <i class="fas fa-star mr-1"></i>Featured
+                            <i class="fas fa-star mr-1"></i>{{ 'labels.featured' | translate }}
                         </span>
                     </div>
 
-                    <p class="text-gray-700 dark:text-gray-300 mb-4">{{ project.description }}</p>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">{{ t(((k + '.description') | translate), k + '.description', project.description) }}</p>
 
-                    @if (project.achievements && project.achievements.length > 0) {
+                    @if (highlights && highlights.length > 0) {
                     <div class="mb-4">
-                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2 text-sm">Highlights:</h4>
+                        <h4 class="font-semibold text-gray-900 dark:text-white mb-2 text-sm">{{ 'labels.highlights' | translate }}:</h4>
                         <ul class="space-y-1">
-                            @for (achievement of project.achievements; track achievement) {
+                            @for (achievement of highlights; track achievement) {
                             <li class="text-sm text-gray-600 dark:text-gray-400 flex items-start">
                                 <i class="fas fa-chevron-right text-primary-500 mr-2 mt-1 text-xs"></i>
                                 <span>{{ achievement }}</span>
@@ -52,13 +54,13 @@
                         @if (project.liveUrl) {
                         <a [href]="project.liveUrl" target="_blank" rel="noopener noreferrer"
                             class="flex-1 btn-primary text-center text-sm">
-                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            <i class="fas fa-external-link-alt mr-2"></i>{{ 'buttons.liveDemo' | translate }}
                         </a>
                         }
                         @if (project.sourceUrl) {
                         <a [href]="project.sourceUrl" target="_blank" rel="noopener noreferrer"
                             class="flex-1 btn-secondary text-center text-sm">
-                            <i class="fab fa-github mr-2"></i>Source Code
+                            <i class="fab fa-github mr-2"></i>{{ 'buttons.sourceCode' | translate }}
                         </a>
                         }
                     </div>
@@ -70,14 +72,15 @@
         <!-- Other Projects -->
         @if (otherProjects.length > 0) {
         <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
-            Other Projects
+            {{ 'sections.otherProjects' | translate }}
         </h3>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @for (project of otherProjects; track project.id) {
+            @let k = 'projects.' + project.i18nKey;
             <div class="glass p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate-on-scroll" animateOnScroll>
-                <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">{{ project.title }}</h4>
-                <p class="text-gray-700 dark:text-gray-300 mb-4 text-sm">{{ project.description }}</p>
+                <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">{{ t(((k + '.title') | translate), k + '.title', project.title) }}</h4>
+                <p class="text-gray-700 dark:text-gray-300 mb-4 text-sm">{{ t(((k + '.description') | translate), k + '.description', project.description) }}</p>
 
                 <div class="flex flex-wrap gap-2 mb-4">
                     @for (tech of project.technologies.slice(0, 4); track tech) {
@@ -98,13 +101,13 @@
                     @if (project.liveUrl) {
                     <a [href]="project.liveUrl" target="_blank" rel="noopener noreferrer"
                         class="text-primary-500 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-300 text-sm font-medium">
-                        <i class="fas fa-external-link-alt mr-1"></i>Demo
+                        <i class="fas fa-external-link-alt mr-1"></i>{{ 'buttons.demo' | translate }}
                     </a>
                     }
                     @if (project.sourceUrl) {
                     <a [href]="project.sourceUrl" target="_blank" rel="noopener noreferrer"
                         class="text-primary-500 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-300 text-sm font-medium">
-                        <i class="fab fa-github mr-1"></i>Code
+                        <i class="fab fa-github mr-1"></i>{{ 'buttons.code' | translate }}
                     </a>
                     }
                 </div>

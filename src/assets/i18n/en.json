@@ -38,12 +38,15 @@
         "eskisehir": {
             "degree": "Bachelor of Science",
             "field": "Computer Engineering",
-            "description": "Comprehensive computer engineering curriculum covering software development, algorithms, system design, and artificial intelligence."
+            "description": "Comprehensive computer engineering curriculum covering software development, algorithms, system design, and artificial intelligence.",
+            "location": "Eskişehir, Türkiye",
+            "institution": "Eskişehir Osmangazi University"
         },
         "42schools": {
             "degree": "Peer-to-Peer Learning Program",
             "field": "Computer Science",
-            "description": "Intensive project-based learning program focusing on C/C++ programming, Unix systems, algorithms, and software engineering principles."
+            "description": "Intensive project-based learning program focusing on C/C++ programming, Unix systems, algorithms, and software engineering principles.",
+            "location": "Istanbul, Türkiye (42 Network)"
         }
     },
     "experience": {
@@ -55,7 +58,9 @@
                 "Migrating legacy WPF branch screens to Angular",
                 "Developing backend services with .NET and WCF on Oracle databases",
                 "Writing clean, unit-tested code that follows SOLID principles and fits existing infrastructure and standards"
-            ]
+            ],
+            "company": "VakıfBank - Bancassurance Technical Department",
+            "location": "Istanbul, Türkiye"
         },
         "bosphorusiss": {
             "title": "Software Development Intern",
@@ -65,7 +70,8 @@
                 "Designed message queue system with RabbitMQ for asynchronous processing",
                 "Optimized performance using Redis caching, reducing database queries by 60%",
                 "Applied Clean Architecture principles for maintainable, testable codebase"
-            ]
+            ],
+            "location": "Istanbul, Türkiye"
         },
         "sovos": {
             "title": "R&D Product Development Intern",
@@ -73,7 +79,8 @@
             "achievements": [
                 "Participated in R&D projects for next-generation tax compliance solutions",
                 "Collaborated with cross-functional teams on product development"
-            ]
+            ],
+            "location": "Istanbul, Türkiye"
         },
         "tcmbilisim": {
             "title": "Software Developer Intern",
@@ -83,7 +90,8 @@
                 "Designed and implemented RESTful APIs for enterprise integrations",
                 "Automated business processes using Power Automate and Power Apps",
                 "Enhanced existing applications with new features and performance improvements"
-            ]
+            ],
+            "location": "Istanbul, Türkiye"
         },
         "tubitak": {
             "title": "Researcher - STAR Program",
@@ -93,17 +101,30 @@
                 "Implemented and compared ANN, KNN, and Random Forest algorithms",
                 "Published research findings and contributed to academic publications",
                 "Optimized algorithm performance achieving 92% accuracy in predictions"
-            ]
+            ],
+            "company": "TÜBİTAK (The Scientific and Technological Research Council of Türkiye)",
+            "location": "Türkiye"
         },
-        "mavera": {
-            "title": "Team Leader - Vehicle Control System",
-            "description": "Led the development team for electric vehicle control systems in university tech team.",
+        "mavera_leader": {
+            "title": "Vehicle Control and Telemetry System Team Leader",
+            "description": "Led the vehicle control and telemetry system unit in the electric vehicle team.",
             "achievements": [
-                "Managed a team of 8 engineering students",
-                "Designed and implemented vehicle control algorithms",
-                "Successfully integrated multiple subsystems (motor control, battery management, telemetry)",
-                "Participated in national electric vehicle competitions"
-            ]
+                "Led vehicle control system and telemetry development team",
+                "Participated in Teknofest 2024 Efficiency Challenge",
+                "Coordinated integration of control algorithms and telemetry data collection",
+                "Managed team workflow and technical decision-making"
+            ],
+            "location": "Eskişehir, Türkiye"
+        },
+        "mavera_member": {
+            "title": "Vehicle Control and Telemetry System Team Member",
+            "description": "Worked on vehicle control systems and telemetry systems in the electric vehicle team.",
+            "achievements": [
+                "Developed vehicle control system components",
+                "Implemented telemetry data collection and monitoring",
+                "Collaborated on integration of motor control and battery management systems"
+            ],
+            "location": "Eskişehir, Türkiye"
         }
     },
     "projects": {
@@ -152,6 +173,14 @@
                 "Implemented gamification system to encourage water conservation",
                 "Created data visualization dashboard for consumption analytics"
             ]
+        },
+        "taskapi": {
+            "title": "Task Management API",
+            "description": "RESTful API for team collaboration and project management"
+        },
+        "portfolio": {
+            "title": "Portfolio Website",
+            "description": "Modern, responsive portfolio built with Angular and Tailwind CSS"
         }
     },
     "buttons": {
@@ -161,7 +190,8 @@
         "code": "Code",
         "sendEmail": "Send me an email",
         "connectWithMe": "Connect with me",
-        "followMe": "Follow me"
+        "followMe": "Follow me",
+        "viewProfile": "View Profile"
     },
     "labels": {
         "keyAchievements": "Key Achievements",
@@ -172,7 +202,8 @@
         "location": "Location",
         "type": "Type",
         "current": "Current",
-        "technologies": "Technologies"
+        "technologies": "Technologies",
+        "featured": "Featured"
     },
     "footer": {
         "builtWith": "Built with",

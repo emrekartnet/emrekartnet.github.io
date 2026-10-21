@@ -21,6 +21,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
     education: [
         {
             id: 'edu-1',
+            i18nKey: 'eskisehir',
             institution: 'Eskişehir Osmangazi University',
             degree: 'Bachelor of Science',
             field: 'Computer Engineering',
@@ -31,6 +32,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'edu-2',
+            i18nKey: '42schools',
             institution: '42 Schools',
             degree: 'Peer-to-Peer Learning Program',
             field: 'Computer Science',
@@ -44,6 +46,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
     experience: [
         {
             id: 'exp-0',
+            i18nKey: 'vakifbank',
             title: 'Associate Software Specialist',
             company: 'VakıfBank - Bancassurance Technical Department',
             location: 'Istanbul, Turkiye',
@@ -62,6 +65,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'exp-1',
+            i18nKey: 'bosphorusiss',
             title: 'Software Development Intern',
             company: 'BosphorusISS',
             location: 'Istanbul, Turkiye',
@@ -80,6 +84,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'exp-2',
+            i18nKey: 'sovos',
             title: 'R&D Product Development Intern',
             company: 'Sovos',
             location: 'Istanbul, Turkiye',
@@ -99,6 +104,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'exp-3',
+            i18nKey: 'tcmbilisim',
             title: 'Software Developer Intern',
             company: 'TCM Bilisim',
             location: 'Istanbul, Turkiye',
@@ -117,6 +123,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'exp-4',
+            i18nKey: 'tubitak',
             title: 'Researcher - STAR Program',
             company: 'TUBITAK (The Scientific and Technological Research Council of Turkey)',
             location: 'Turkiye',
@@ -135,6 +142,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'exp-5',
+            i18nKey: 'mavera_leader',
             title: 'Vehicle Control and Telemetry System Team Leader',
             company: 'Mavera Tech Team',
             location: 'Eskişehir, Turkiye',
@@ -153,6 +161,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'exp-6',
+            i18nKey: 'mavera_member',
             title: 'Vehicle Control and Telemetry System Team Member',
             company: 'Mavera Tech Team',
             location: 'Eskişehir, Turkiye',
@@ -173,6 +182,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
     projects: [
         {
             id: 'proj-1',
+            i18nKey: 'randevubulurum',
             title: 'Randevu Bulurum',
             description: 'Enterprise-grade SaaS appointment management platform serving thousands of users',
             longDescription: `A comprehensive appointment management system designed for businesses of all sizes. 
@@ -206,6 +216,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'proj-2',
+            i18nKey: 'memeclassification',
             title: 'Multimodal Meme Classification System',
             description: 'AI-powered content analysis platform using vision transformers and CLIP models',
             longDescription: `Advanced machine learning system for analyzing and classifying meme content using 
@@ -236,6 +247,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'proj-3',
+            i18nKey: 'tbot',
             title: 'T-BOT: Banking AI Assistant',
             description: 'Context-aware conversational AI for banking customer support',
             longDescription: `Intelligent chatbot leveraging Large Language Models for banking customer service. 
@@ -263,6 +275,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'proj-4',
+            i18nKey: 'ecowater',
             title: 'EcoWater Platform',
             description: 'Hackathon-winning sustainable water consumption tracking platform',
             longDescription: `Web application promoting sustainable water usage through gamification and analytics. 
@@ -281,6 +294,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'proj-5',
+            i18nKey: 'taskapi',
             title: 'Task Management API',
             description: 'RESTful API for team collaboration and project management',
             technologies: ['.NET 8', 'Entity Framework Core', 'PostgreSQL', 'JWT', 'Swagger', 'Clean Architecture'],
@@ -289,6 +303,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         },
         {
             id: 'proj-6',
+            i18nKey: 'portfolio',
             title: 'Portfolio Website',
             description: 'Modern, responsive portfolio built with Angular and Tailwind CSS',
             technologies: ['Angular 18', 'TypeScript', 'Tailwind CSS', 'RxJS', 'GitHub Pages'],

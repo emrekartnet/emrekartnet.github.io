@@ -18,13 +18,14 @@
 
                 <div class="space-y-6">
                     @for (edu of education; track edu.id) {
+                    @let k = 'education.' + edu.i18nKey;
                     <div class="glass p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate-on-scroll"
                         animateOnScroll>
                         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                             <div>
-                                <h4 class="text-xl font-bold text-gray-900 dark:text-white">{{ edu.degree }}</h4>
+                                <h4 class="text-xl font-bold text-gray-900 dark:text-white">{{ t(((k + '.degree') | translate), k + '.degree', edu.degree) }}</h4>
                                 <p class="text-lg text-primary-500 dark:text-primary-400 font-semibold">{{
-                                    edu.institution }}</p>
+                                    t(((k + '.institution') | translate), k + '.institution', edu.institution) }}</p>
                             </div>
                             <div class="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">
                                 <i class="fas fa-calendar mr-2"></i>
@@ -32,13 +33,13 @@
                             </div>
                         </div>
                         <p class="text-gray-600 dark:text-gray-400 mb-2">
-                            <i class="fas fa-book mr-2"></i>{{ edu.field }}
+                            <i class="fas fa-book mr-2"></i>{{ t(((k + '.field') | translate), k + '.field', edu.field) }}
                         </p>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">
-                            <i class="fas fa-map-marker-alt mr-2"></i>{{ edu.location }}
+                            <i class="fas fa-map-marker-alt mr-2"></i>{{ t(((k + '.location') | translate), k + '.location', edu.location) }}
                         </p>
                         @if (edu.description) {
-                        <p class="text-gray-700 dark:text-gray-300">{{ edu.description }}</p>
+                        <p class="text-gray-700 dark:text-gray-300">{{ t(((k + '.description') | translate), k + '.description', edu.description) }}</p>
                         }
                     </div>
                     }

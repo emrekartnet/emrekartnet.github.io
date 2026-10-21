@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
 import { PORTFOLIO_DATA } from '../../shared/data';
+import { tr } from '../../shared/i18n';
 
 @Component({
   selector: 'app-experience',
@@ -12,4 +13,5 @@ import { PORTFOLIO_DATA } from '../../shared/data';
 })
 export class Experience {
   experiences = PORTFOLIO_DATA.experience;
+  t = tr;
 }

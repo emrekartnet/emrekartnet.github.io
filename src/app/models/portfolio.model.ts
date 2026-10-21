@@ -20,6 +20,7 @@ export interface Profile {
 
 export interface Education {
     id: string;
+    i18nKey?: string; // key under the matching section in assets/i18n/*.json
     institution: string;
     degree: string;
     field: string;
@@ -33,6 +34,7 @@ export interface Education {
 
 export interface Experience {
     id: string;
+    i18nKey?: string; // key under the matching section in assets/i18n/*.json
     title: string;
     company: string;
     location: string;
@@ -47,6 +49,7 @@ export interface Experience {
 
 export interface Project {
     id: string;
+    i18nKey?: string; // key under the matching section in assets/i18n/*.json
     title: string;
     description: string;
     longDescription?: string;
