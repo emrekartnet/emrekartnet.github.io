@@ -32,7 +32,7 @@
         "getInTouch": "İletişim"
     },
     "profile": {
-        "bio": "Full-Stack geliştirme, cloud mimarisi ve yapay zeka entegrasyonu konularında deneyimli, tutkulu bir Bilgisayar Mühendisiyim. .NET Core, Angular ve modern DevOps pratikleriyle kurumsal seviyede SaaS platformları geliştirme deneyimim var. Gerçek dünya problemlerine ölçeklenebilir ve sürdürülebilir çözümler üretmeye odaklanıyorum."
+        "bio": "VakıfBank Banka Sigortacılığı Teknik Müdürlüğü'nde Yazılım Uzman Yardımcısı olarak şube, çağrı merkezi ve mobil kanallar için .NET, Angular ve Oracle ile uygulamalar geliştiriyorum. Mevcut altyapı ve standartlara uyumlu; temiz, okunabilir ve verimli kod yazmaya, SOLID prensiplerini uygulamaya odaklanıyorum."
     },
     "education": {
         "eskisehir": {
@@ -47,6 +47,16 @@
         }
     },
     "experience": {
+        "vakifbank": {
+            "title": "Yazılım Uzman Yardımcısı",
+            "description": "Banka Sigortacılığı Teknik Müdürlüğü'nde şube, çağrı merkezi ve mobil kanallar için banka sigortacılığı uygulamaları geliştiriyorum.",
+            "achievements": [
+                "Şube, çağrı merkezi ve mobil kanallarda birçok talebi canlıya aldım",
+                "Eski WPF şube ekranlarını Angular'a taşıyorum",
+                ".NET ve WCF ile Oracle veritabanları üzerinde backend servisleri geliştiriyorum",
+                "SOLID prensiplerine uygun, birim testleri yazılmış, mevcut altyapı ve standartlara uyumlu temiz kod yazıyorum"
+            ]
+        },
         "bosphorusiss": {
             "title": "Yazılım Geliştirme Stajyeri",
             "description": "Son teknoloji dağıtık  teknolojilerini kullanarak gerçek zamanlı görev yönetim sistemi mimarisi oluşturdum ve geliştirdim.",
@@ -126,8 +136,8 @@
             "description": "Vision transformers ve CLIP modelleri kullanarak yapay zeka destekli içerik analiz platformu",
             "longDescription": "CLIP ve Vision Transformer mimarileriyle çok modlu yapay zeka modelleri kullanarak meme içeriğini analiz eden ve sınıflandıran gelişmiş makine öğrenimi sistemi. Duygu analizi, kategori sınıflandırması ve gerçek zamanlı çıkarım özelliklerini içerir.",
             "achievements": [
-                "Çoklu modal anlama için son teknoloji CLIP ve ViT modellerini entegre ettim",
-                "ML çıkarımı için FastAPI ile Python mikro hizmeti oluşturdum",
+                "Backend, frontend ve yapay zeka bileşenlerini tek, çalışan bir platformda entegre ettim",
+                "Python/FastAPI çıkarım servisini (CLIP & ViT modelleri) .NET backend'e bağladım",
                 "Orkestrasyon ve veri yönetimi için .NET Core backend",
                 "Chart.js kullanarak interaktif görselleştirmelerle Angular ön yüz",
                 "Test veri setinde %89 sınıflandırma doğruluğu elde ettim"
