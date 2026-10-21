@@ -3,14 +3,14 @@ import { PortfolioData } from '../models/portfolio.model';
 export const PORTFOLIO_DATA: PortfolioData = {
     profile: {
         name: 'Emre Kart',
-        title: 'Computer Engineer',
+        title: 'Associate Software Specialist @ VakıfBank',
         tagline: 'Building Scalable SaaS Architectures & AI-Driven Solutions',
         subTagline: 'Computer Engineer specializing in .NET Core, Angular, and Cloud Native Technologies',
         location: 'Istanbul, Turkiye',
         email: 'kartemre3403@gmail.com',
-        bio: `Passionate Computer Engineer with expertise in full-stack development, cloud architecture, and AI integration. 
-    Experienced in building enterprise-grade SaaS platforms using .NET Core, Angular, and modern DevOps practices. 
-    Dedicated to creating scalable, maintainable solutions that solve real-world problems.`,
+        bio: `Associate Software Specialist at VakıfBank's Bancassurance Technical Department, developing applications for branch,
+    call center and mobile channels with .NET, Angular and Oracle. Focused on clean, readable and efficient code that fits
+    existing infrastructure and standards, following SOLID principles.`,
         links: {
             github: 'https://github.com/kartemre',
             linkedin: 'https://www.linkedin.com/in/emre-kart',
@@ -36,12 +36,30 @@ export const PORTFOLIO_DATA: PortfolioData = {
             field: 'Computer Science',
             location: 'Paris/Istanbul Network',
             startDate: '2025-05',
-            endDate: 'Present',
+            endDate: '2026-06',
             description: 'Intensive project-based learning program focusing on C/C++ programming, Unix systems, algorithms, and software engineering principles.',
         },
     ],
 
     experience: [
+        {
+            id: 'exp-0',
+            title: 'Associate Software Specialist',
+            company: 'VakıfBank - Bancassurance Technical Department',
+            location: 'Istanbul, Turkiye',
+            type: 'full-time',
+            startDate: '2026-02',
+            endDate: 'Present',
+            current: true,
+            description: 'Developing bancassurance applications for branch, call center and mobile channels in the Bancassurance Technical Department.',
+            technologies: ['C#', '.NET', 'WCF', 'WPF', 'Angular', 'Oracle', 'Azure DevOps', 'Unit Testing'],
+            achievements: [
+                'Delivered many requests to production across branch, call center and mobile channels',
+                'Migrating legacy WPF branch screens to Angular',
+                'Developing backend services with .NET and WCF on Oracle databases',
+                'Writing clean, unit-tested code that follows SOLID principles and fits existing infrastructure and standards',
+            ],
+        },
         {
             id: 'exp-1',
             title: 'Software Development Intern',
@@ -209,8 +227,8 @@ export const PORTFOLIO_DATA: PortfolioData = {
             featured: true,
             category: 'ai',
             achievements: [
-                'Integrated state-of-the-art CLIP and ViT models for multimodal understanding',
-                'Built Python microservice with FastAPI for ML inference',
+                'Integrated the backend, frontend and AI components into a single working platform',
+                'Connected the Python/FastAPI inference service (CLIP & ViT models) to the .NET backend',
                 '.NET Core backend for orchestration and data management',
                 'Angular frontend with interactive visualizations using Chart.js',
                 'Achieved 89% classification accuracy on test dataset',
@@ -288,6 +306,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
                 { name: 'RESTful APIs', level: 85, category: 'Backend Development', icon: 'fa-exchange-alt' },
                 { name: '.NET 8 / ASP.NET Core', level: 85, category: 'Backend Development', icon: 'devicon-dotnetcore-plain' },
                 { name: 'C#', level: 85, category: 'Backend Development', icon: 'devicon-csharp-plain' },
+                { name: 'WCF', level: 75, category: 'Backend Development', icon: 'fa-plug' },
             ],
         },
         {
@@ -306,6 +325,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
             skills: [
                 { name: 'Docker', level: 75, category: 'DevOps & Cloud', icon: 'devicon-docker-plain' },
                 { name: 'Git', level: 85, category: 'DevOps & Cloud', icon: 'devicon-git-plain' },
+                { name: 'Azure DevOps', level: 75, category: 'DevOps & Cloud', icon: 'fa-code-branch' },
             ],
         },
         {
@@ -314,7 +334,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
             skills: [
                 { name: 'PostgreSQL', level: 80, category: 'Databases', icon: 'devicon-postgresql-plain' },
                 { name: 'Microsoft SQL Server', level: 75, category: 'Databases', icon: 'devicon-microsoftsqlserver-plain' },
-                { name: 'Oracle PL/SQL', level: 70, category: 'Databases', icon: 'devicon-oracle-plain' },
+                { name: 'Oracle PL/SQL', level: 75, category: 'Databases', icon: 'devicon-oracle-plain' },
                 { name: 'Redis', level: 65, category: 'Databases', icon: 'devicon-redis-plain' },
                 { name: 'Entity Framework Core', level: 80, category: 'Databases', icon: 'fa-layer-group' },
             ],
